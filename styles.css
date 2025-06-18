@@ -1,14 +1,13 @@
 :root {
-  /* Updated Color Palette */
-  --base-0: #0a0e17;    
-  --base-1: #161b2a;      
-  --text-main: #e0e3ed;   
-  --accent-type: #82aaff;  
-  --accent-string: #ecc48d;
-  --accent-comment: #a1a8bd;
-  --accent-keyword: #ecc48d;
+  --base-0: #1C0E00;    
+  --base-1: #2E1A00;      
+  --text-main: #E0E0E0;   
+  --accent-type: #FF6B00;  
+  --accent-string: #FFA800;
+  --accent-comment: #FF4D00;
+  --accent-keyword: #FFA800;
 
-  /* Functional Assignments (unchanged) */
+  /* Functional Assignments */
   --primary: var(--base-0);
   --secondary: var(--base-1);
   --text-primary: var(--text-main);
@@ -18,7 +17,6 @@
   --nav-height: 70px;
 }
 
-/* All other CSS remains exactly the same */
 body {
   background-color: var(--primary);
   color: var(--text-primary);
@@ -27,16 +25,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Typography */
 h1, h2, h3, h4 {
   font-weight: 600;
 }
 
+.tech-stack span {
+  display: inline-block;
+  background-color: #ffaa0057;
+  color: #FFA800;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  margin: 4px 4px 0 0;
+  border-radius: 8px;
+}
 /* Navigation */
 nav {
-  background-color: #141a25;
+  background-color: rgba(28, 14, 0, 0.9);
   backdrop-filter: blur(10px);
   height: var(--nav-height);
+  border-bottom: 1px solid var(--accent);
 }
 
 .nav-link {
@@ -221,3 +228,10 @@ nav {
     padding-top: 2rem;
   }
 }
+
+#Project12,
+#Project13,
+#Project14 {
+  border-color: #FF6B00;
+}
+
